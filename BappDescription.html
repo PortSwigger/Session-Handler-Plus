@@ -1,0 +1,22 @@
+<p>The Session Handler Plus (SH+) Burp Suite extension offers enhanced session handling capabilities for JWTs, access tokens, refresh tokens, and CSRF tokens. Additionally, it allows for custom scripts to be launched through session handling actions, and facilitates the triggering of Selenium automation to execute complex or JavaScript based login procedures.</p>
+
+<p>Main features of this extension:</p>
+<ol>
+	<li>
+		Get tokens from the response and store them in Burp Cookie Jar without the need for an additional request to get valid tokens. These tokens can be used in different places such as request headers, request body, with customizable formats like prefix, suffix, etc. from the GUI
+	</li>
+	<li>
+		Provide additional session handling actions to delete all cookies from the cookie jar or only the collected tokens from the cookie jar. This is useful during ADFS login with different cookie names.
+	</li>
+	<li>
+		Run an external script through session handling actions. This is useful when the refresh token is expired and login needs to be performed through a web browser using Selenium webdriver and proxy traffic through Burp Proxy, so the token will be updated with new tokens.
+	</li>
+	<li>
+		Validate the request/response before reading the tokens to avoid processing unnecessary responses.
+	</li>
+	<li>
+		Store different applications' tokens with the combination of 'Shp-Path' request header and Burp cookie jar path. This helps when working with multiple APIs with the same structure but different authentication/refresh tokens.
+	</li>
+</ol>
+
+<p>For further usage information and screenshots, please check out the repository.</p>

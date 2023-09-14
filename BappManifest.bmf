@@ -1,0 +1,13 @@
+Uuid: e4aa4cee811f43af96b2cd5e7e81598e
+ExtensionType: 2
+Name: Session Handler+
+RepoName: session-handler-plus
+ScreenVersion: 1.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: Vinaya Kumar
+ShortDescription: Provides additional control for handling sessions.
+EntryPoint: Sessoin-Handler-Plus.py
+BuildCommand: 
+SupportedProducts: Pro, Community
